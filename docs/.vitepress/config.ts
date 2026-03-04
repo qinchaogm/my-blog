@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "charles",
   description: "专注于 Vue/React进阶与AI互联网实践",
-  base:'my-blog',
+  base:'/my-blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

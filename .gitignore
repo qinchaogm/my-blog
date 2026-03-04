@@ -2,6 +2,10 @@
 node_modules/
 .pnp/
 .pnp.js
+docs/node_modules
+docs/.vuepress/.temp
+docs/.vitepress/dist
+docs/.vitepress/cache
 
 # Build output
 dist/
