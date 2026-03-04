@@ -1,19 +1,18 @@
 ---
+# https://vitepress.dev/reference/default-theme-home-page
 layout: home
+
 hero:
-  name: 秦超的博客
-  text: 探索技术 · 记录生活 · 分享思考
-  tagline: 关于我、AI、游记、技术笔记、作品
-  image:
-    src: /hero.png
-    alt: 秦超的博客
+  name: "charles"
+  text: "专注于 Vue/React 进阶与AI互联网实践"
+  tagline: My great project tagline
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /about/
+      text: Markdown Examples
+      link: /markdown-examples
     - theme: alt
-      text: GitHub
-      link: https://github.com/qinchaogm/my-blog
+      text: API Examples
+      link: /api-examples
 
 features:
   - icon: 🤖
@@ -37,3 +36,4 @@ features:
     link: /projects/
     linkText: 查看作品
 ---
+

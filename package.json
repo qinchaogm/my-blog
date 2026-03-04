@@ -9,7 +9,11 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
-  "keywords": ["blog", "vitepress", "vue"],
+  "keywords": [
+    "blog",
+    "vitepress",
+    "vue"
+  ],
   "author": "qinchaogm",
   "license": "MIT",
   "devDependencies": {
@@ -17,5 +21,9 @@
     "typescript": "^5.8.2",
     "vitepress": "^1.6.3",
     "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@sugarat/theme": "^0.5.14",
+    "pagefind": "^1.4.0"
   }
 }

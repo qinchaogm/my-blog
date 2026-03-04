@@ -1,0 +1,179 @@
+/* 全站基础排版 */
+:root {
+  --vp-c-bg-soft: #f7f7fb;
+  --vp-c-border-subtle: rgba(15, 23, 42, 0.06);
+  --vp-c-bg: yellow;
+  --vp-c-bg-soft: #f0f4f8; /* 柔和背景，常用于区块 */
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "Segoe UI",
+    sans-serif;
+  letter-spacing: 0.01em;
+}
+.VPContent.is-home {
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+/* 文档内容区域整体卡片感 */
+.VPDoc .content {
+  max-width: 760px;
+}
+
+.VPDoc .content > div > .vp-doc {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px 32px 40px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.04);
+  border: 1px solid var(--vp-c-border-subtle);
+}
+
+@media (max-width: 768px) {
+  .VPDoc .content > div > .vp-doc {
+    padding: 20px 18px 28px;
+    border-radius: 14px;
+  }
+}
+
+/* 标题层级样式：简洁有层次 */
+.vp-doc h1 {
+  font-size: 2.1rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+
+.vp-doc h1::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  border-radius: 999px;
+  margin-top: 0.9rem;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+}
+
+.vp-doc h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.vp-doc h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* 正文排版 */
+.vp-doc p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.vp-doc strong {
+  color: #111827;
+}
+
+.vp-doc ul,
+.vp-doc ol {
+  padding-left: 1.2rem;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.vp-doc li {
+  margin: 0.25rem 0;
+}
+
+/* 表格样式：简洁的卡片表格 */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.vp-doc thead {
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.vp-doc tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.vp-doc tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 引用块：居中醒目的提示 */
+.vp-doc blockquote {
+  margin: 1.4rem 0 0.2rem;
+  padding: 1rem 1.3rem;
+  border-left: 4px solid #2563eb;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.04),
+    rgba(56, 189, 248, 0.03)
+  );
+  border-radius: 0 14px 14px 0;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.vp-doc blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* 代码块：简洁卡片风 */
+.vp-doc pre {
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+/* 任务列表（复选框） */
+.vp-doc input[type="checkbox"] {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+}
+
+.vp-doc li > input[type="checkbox"] {
+  margin-right: 0.45rem;
+}
+
+/* 小徽标式 emoji 标题，让页面更活泼但不花哨 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.vp-doc h1 span,
+.vp-doc h2 span,
+.vp-doc h3 span {
+  display: inline-flex;
+  align-items: center;
+}
