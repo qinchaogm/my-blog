@@ -23,16 +23,18 @@ export default defineConfig({
       { text: "关于我", link: "/about/" },
     ],
     sidebar: {
-      //   "/ai/": [
-      //     {
-      //       text: "AI 探索",
-      //       items: [
-      //         { text: "AI 前沿动态", link: "/ai/news" },
-      //         { text: "AI 工具推荐", link: "/ai/tools" },
-      //         { text: "AI 教程与实践", link: "/ai/tutorials" },
-      //       ],
-      //     },
-      //   ],
+      "/tech/": [
+        {
+          text: "技术笔记",
+          items: [
+            { text: "文章列表", link: "/tech/" },
+            {
+              text: "VitePress + GitHub Pages 实现静态文档站",
+              link: "/tech/vitepress-github-pages",
+            },
+          ],
+        },
+      ],
     },
     socialLinks: [{ icon: "github", link: "https://github.com/Charles" }],
   },

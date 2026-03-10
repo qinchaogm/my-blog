@@ -4,18 +4,18 @@ layout: home
 
 hero:
   name: "charles"
-  text: "专注于 Vue/React 进阶与AI互联网实践"
-  tagline: My great project tagline
+  text: "专注于Vue/React进阶与AI互联网实践"
+  tagline: 分享技术 记录生活 共同进步
   actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+    # - theme: brand
+    #   text: Markdown Examples
+    #   link: /markdown-examples
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
-  - icon: 🤖
+  - icon: 🤖 
     title: AI 探索
     details: 关注人工智能前沿动态，分享 AI 工具使用心得和教程
     link: /ai/news
@@ -35,5 +35,7 @@ features:
     details: 个人项目、开源作品、创意设计展示
     link: /projects/
     linkText: 查看作品
+
+  
 ---
 
