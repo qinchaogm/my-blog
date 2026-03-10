@@ -1,40 +1,30 @@
 ---
 layout: page
 title: 技术笔记
+sidebar: false
+pageClass: tech-list-page
 ---
 
-# 技术笔记 💻
-
-前端开发、全栈技术、系统设计等技术分享。
-
-## 技术分类
-
-### 🎨 前端开发
-
-- Vue.js / React
-- TypeScript
-- CSS / Tailwind
-- Vite / Webpack
-
-### ⚙️ 后端技术
-
-- Node.js
-- Python
-- 数据库设计
-- API 开发
-
-### 🚀 DevOps
-
-- Docker / K8s
-- CI/CD
-- 云服务
-
-### 📱 移动端
-
-- React Native
-- Flutter
-- 小程序
-
----
-
-> 技术日新月异，持续学习中...
+<div class="tech-card-container">
+  <a href="./vitepress-github-pages" class="tech-card">
+    <div class="tech-card-content">
+      <h3 class="tech-card-title">VitePress + GitHub Pages 实现静态文档站</h3>
+      <p class="tech-card-excerpt">从 0 搭建 VitePress 文档站，并部署到 GitHub Pages 的完整流程。涵盖配置优化、自定义样式、自动化部署等关键步骤，帮助你快速搭建个人技术博客。</p>
+      <div class="tech-card-footer">
+        <span class="tech-card-tag">教程</span>
+        <span class="tech-card-arrow">→</span>
+      </div>
+    </div>
+  </a>
+  
+  <div class="tech-card tech-card-placeholder">
+    <div class="tech-card-content">
+      <h3 class="tech-card-title">下一篇技术文章</h3>
+      <p class="tech-card-excerpt">这里将展示你的下一篇技术文章简介。开始写作吧，分享你的技术见解和经验！</p>
+      <div class="tech-card-footer">
+        <span class="tech-card-tag">待更新</span>
+        <span class="tech-card-arrow">→</span>
+      </div>
+    </div>
+  </div>
+</div>
